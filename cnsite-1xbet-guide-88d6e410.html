@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于 1xbet · 稳定入口说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: linear-gradient(145deg, #fce9d2 0%, #fbd9b3 50%, #f6cba1 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem;
+        }
+
+        .wrapper {
+            max-width: 1120px;
+            margin: 0 auto;
+            width: 100%;
+            flex: 1;
+        }
+
+        /* 暖色导航 */
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255, 246, 235, 0.7);
+            backdrop-filter: blur(8px);
+            padding: 0.8rem 2rem;
+            border-radius: 60px;
+            box-shadow: 0 8px 20px rgba(180, 110, 40, 0.08);
+            margin-bottom: 2.8rem;
+        }
+
+        .nav-brand {
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: #7a4c2c;
+            letter-spacing: 0.3px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #5a3b25;
+            font-weight: 500;
+            font-size: 0.95rem;
+            padding: 0.35rem 0.1rem;
+            border-bottom: 2px solid transparent;
+            transition: 0.2s;
+        }
+
+        .nav-links a:hover {
+            border-bottom-color: #c88558;
+            color: #3d2b1b;
+        }
+
+        /* 卡片区域 */
+        .card {
+            background: #fffffffa;
+            backdrop-filter: blur(2px);
+            border-radius: 40px;
+            padding: 2.5rem 3rem;
+            box-shadow: 0 20px 40px -12px rgba(160, 90, 40, 0.15), 0 4px 12px rgba(0, 0, 0, 0.03);
+            margin-bottom: 2.2rem;
+            transition: box-shadow 0.25s;
+        }
+
+        .card-light {
+            background: rgba(255, 249, 241, 0.75);
+            backdrop-filter: blur(6px);
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            color: #4f331f;
+            line-height: 1.2;
+            margin-bottom: 0.6rem;
+        }
+
+        .subhead {
+            font-size: 1.15rem;
+            color: #6b4f38;
+            margin-bottom: 1.6rem;
+            font-weight: 400;
+            max-width: 80%;
+        }
+
+        .lead {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: #3b2b1d;
+            margin-bottom: 1.8rem;
+        }
+
+        /* 三场景栅格 */
+        .scenes-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.8rem;
+            margin: 2rem 0 1rem;
+        }
+
+        .scene-item {
+            background: #fffbf6;
+            border-radius: 28px;
+            padding: 1.8rem 1.5rem;
+            box-shadow: 0 6px 18px rgba(170, 100, 45, 0.08);
+            transition: transform 0.18s ease, box-shadow 0.2s;
+            border: 1px solid #f0ddcb;
+        }
+
+        .scene-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 14px 28px -8px rgba(150, 75, 25, 0.12);
+        }
+
+        .scene-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: #613f28;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .scene-item p {
+            color: #4f3927;
+            line-height: 1.5;
+            font-size: 0.95rem;
+        }
+
+        .scene-icon {
+            background: #e9d5c0;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            color: #5f3e29;
+            margin-right: 6px;
+        }
+
+        /* 说明 / FAQ 摘要 */
+        .faq-mini {
+            margin-top: 1rem;
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem 2rem;
+            margin: 1rem 0;
+        }
+
+        .faq-item {
+            border-left: 4px solid #dbb494;
+            padding-left: 1rem;
+        }
+
+        .faq-item strong {
+            display: block;
+            font-weight: 600;
+            color: #4f331f;
+            margin-bottom: 0.25rem;
+        }
+
+        .faq-item p {
+            color: #4b3828;
+            font-size: 0.95rem;
+        }
+
+        .link-intro {
+            background: #f7ebde;
+            border-radius: 50px;
+            padding: 1rem 2rem;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+
+        .link-intro a {
+            color: #875d3e;
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 1.5px dotted #b58360;
+            transition: 0.2s;
+        }
+
+        .link-intro a:hover {
+            color: #613f28;
+            border-bottom-style: solid;
+        }
+
+        .btn-like {
+            display: inline-block;
+            background: #e6ceb9;
+            color: #3e2b1d;
+            padding: 0.5rem 1.8rem;
+            border-radius: 60px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: 0.2s;
+            box-shadow: 0 2px 6px rgba(150, 80, 30, 0.08);
+        }
+
+        .btn-like:hover {
+            background: #dbbca0;
+            transform: scale(1.02);
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(90deg, #e8d2bd, #f5e2d0, #e8d2bd);
+            margin: 2rem 0 1.5rem;
+            opacity: 0.4;
+        }
+
+        .footer-note {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #6a4f38;
+            padding: 1.2rem 0 0.5rem;
+            opacity: 0.75;
+        }
+
+        @media (max-width: 820px) {
+            .card {
+                padding: 1.8rem 1.5rem;
+            }
+
+            h1 {
+                font-size: 1.9rem;
+            }
+
+            .subhead {
+                max-width: 100%;
+                font-size: 1rem;
+            }
+
+            .scenes-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                padding: 0.6rem 1.2rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 540px) {
+            .scenes-grid {
+                grid-template-columns: 1fr;
+            }
+
+            body {
+                padding: 1rem;
+            }
+
+            .scene-item {
+                padding: 1.4rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <!-- 导航区 -->
+    <nav>
+        <span class="nav-brand">⚡ 稳定指引</span>
+        <ul class="nav-links">
+            <li><a href="#about">介绍</a></li>
+            <li><a href="#scenes">使用场景</a></li>
+            <li><a href="#faq">常见说明</a></li>
+            <li><a href="https://cnsite--1xbet.com" style="background:#ebd6c3; padding:0.2rem 0.9rem; border-radius:30px;">1xbet</a></li>
+        </ul>
+    </nav>
+
+    <!-- 核心介绍 hero -->
+    <div class="card" id="about">
+        <h1>关于稳定入口与页面导航</h1>
+        <div class="subhead">清晰 · 平实 · 方便查阅</div>
+        <p class="lead">
+            很多朋友在寻找在线活动的入口时，都希望有一个直接、稳定的路径。本页整理了与 
+            <a href="https://cnsite--1xbet.com" style="font-weight:600; color:#855f44;">1xbet</a> 
+            相关的说明与场景指引，帮助你在需要时快速了解基本功能与使用方式。所有信息均基于日常操作整理，不包含夸张承诺。
+        </p>
+        <p class="lead" style="margin-bottom:0.5rem;">
+            页面围绕三个常见使用场景展开，并在末尾附有简短 FAQ 摘要。如果你只是想快速了解 
+            <a href="https://cnsite--1xbet.com" style="font-weight:600; color:#855f44;">1xbet</a> 
+            的链接位置，可以直接点击导航栏中的标识。
+        </p>
+    </div>
+
+    <!-- 三个场景模块 -->
+    <div class="card card-light" id="scenes">
+        <h2 style="font-size:1.6rem; font-weight:500; color:#4f331f; margin-bottom:0.2rem;">📌 常见使用场景</h2>
+        <p style="color:#5b3f2b; margin-bottom:0.2rem;">根据日常反馈，以下三个场景最为频繁</p>
+        <div class="scenes-grid">
+            <div class="scene-item">
+                <h3><span class="scene-icon">🔄</span> 快速访问</h3>
+                <p>当你需要直接进入平台时，通过收藏夹或导航链接直达 <a href="https://cnsite--1xbet.com" style="color:#785538; font-weight:500;">1xbet</a> 首页，省去中间跳转，节省时间。</p>
+            </div>
+            <div class="scene-item">
+                <h3><span class="scene-icon">📋</span> 了解功能模块</h3>
+                <p>初次接触时，可以浏览页面上的分类与说明。很多入口旁边会附带简短介绍，帮助判断是否匹配你的需求。</p>
+            </div>
+            <div class="scene-item">
+                <h3><span class="scene-icon">🔐</span> 稳定连接参考</h3>
+                <p>部分用户会定期检查可用性。本页提供的链接指向不变，方便作为基准点，避免记忆多个地址。</p>
+            </div>
+        </div>
+        <div style="margin-top:1.2rem; background:#f2e3d3; padding:0.8rem 1.5rem; border-radius:40px; display:inline-block;">
+            <span style="font-size:0.95rem;">👉 如需直接前往，可点击导航中的 <a href="https://cnsite--1xbet.com" style="font-weight:600; color:#7a5539;">1xbet</a> 链接。</span>
+        </div>
+    </div>
+
+    <!-- 常见说明 (FAQ摘要) -->
+    <div class="card" id="faq">
+        <h2 style="font-size:1.5rem; font-weight:500; color:#4f331f; margin-bottom:0.4rem;">📖 常见说明摘要</h2>
+        <p style="color:#5f4430; margin-bottom:0.8rem;">以下整理了几条用户经常询问的内容，供参考</p>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <strong>访问时应注意什么？</strong>
+                <p>确保网络环境稳定，建议使用主流浏览器。如遇到加载延迟，可尝试刷新或稍后重试。</p>
+            </div>
+            <div class="faq-item">
+                <strong>链接是否长期有效？</strong>
+                <p>当前页面指向的 <a href="https://cnsite--1xbet.com" style="color:#7a5539;">1xbet</a> 域名保持稳定，但网络环境变化可能影响可用性，请以实际访问为准。</p>
+            </div>
+            <div class="faq-item">
+                <strong>有没有其他备用方式？</strong>
+                <p>建议将页面加入浏览器书签，或记住导航栏的直接入口，避免依赖搜索。</p>
+            </div>
+            <div class="faq-item">
+                <strong>页面上的介绍准确吗？</strong>
+                <p>所有说明均基于公开界面与日常使用整理，不包含诱导性描述，请根据自身判断使用。</p>
+            </div>
+        </div>
+        <hr>
+        <div style="display:flex; flex-wrap:wrap; gap:0.8rem; align-items:center;">
+            <span style="font-weight:500; color:#593f2b;">🔗 直接前往：</span>
+            <a href="https://cnsite--1xbet.com" class="btn-like">1xbet</a>
+            <span style="color:#6b4e36; margin-left:0.3rem; font-size:0.9rem;">（链接文本即为平台名称）</span>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer-note">
+        ⚡ 信息整理页 · 仅作导航与说明用途 · 请合理使用
+    </div>
+</div>
+</body>
+</html>
